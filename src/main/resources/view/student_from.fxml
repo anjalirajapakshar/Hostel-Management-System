@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.86" prefHeight="608.0" prefWidth="1243.0" styleClass="linear-grad" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hms.controller.ManageStudentFromController">
+   <children>
+      <Label layoutX="127.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="47.0" prefWidth="368.0" stylesheets="@../style/Style.css" text="Manage Student ." textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Britannic Bold" size="46.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="71.0" layoutX="53.0" layoutY="25.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/student-logo.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutX="28.0" layoutY="128.0" opacity="0.86" prefHeight="438.0" prefWidth="415.0" stylesheets="@../style/Style.css">
+         <styleClass>
+            <String fx:value="linear-barchart" />
+            <String fx:value="edge-button" />
+         </styleClass>
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="43.0" layoutY="34.0" prefHeight="32.0" prefWidth="128.0" text="Student ID :">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="84.0" prefHeight="32.0" prefWidth="128.0" text="Name         :">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" layoutX="204.0" layoutY="89.0" onKeyReleased="#txtNameOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : Niwanthi" style="-fx-border-color: blue;">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></JFXTextField>
+            <Label layoutX="42.0" layoutY="136.0" prefHeight="32.0" prefWidth="128.0" text="Address     :">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtAddress" layoutX="204.0" layoutY="139.0" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : Kaluthara" style="-fx-border-color: blue;" />
+            <Label layoutX="40.0" layoutY="249.0" prefHeight="32.0" prefWidth="128.0" text="Contact No :">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtContactNo" layoutX="204.0" layoutY="252.0" onKeyReleased="#txtContactOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : 0760876756" style="-fx-border-color: blue;" />
+            <Label layoutX="42.0" layoutY="192.0" prefHeight="32.0" prefWidth="128.0" text="DOB           :">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="203.0" layoutY="197.0" prefHeight="33.0" prefWidth="185.0" style="-fx-border-color: blue;" />
+            <Label layoutX="44.0" layoutY="312.0" prefHeight="32.0" prefWidth="128.0" text="Gender      :">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStudentId" layoutX="203.0" layoutY="40.0" prefHeight="33.0" prefWidth="185.0" style="-fx-border-color: blue;" text="S001" textFill="#110000">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></Label>
+            <ComboBox fx:id="cmbGender" layoutX="203.0" layoutY="313.0" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: blue;" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblStudent" layoutX="480.0" layoutY="316.0" prefHeight="250.0" prefWidth="726.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="85.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="126.0" text="Address" />
+            <TableColumn fx:id="colContactNo" prefWidth="147.0" text="Contact No" />
+            <TableColumn fx:id="colDOB" prefWidth="124.0" text="DOB" />
+            <TableColumn fx:id="colGender" prefWidth="126.0" text="Gender" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="931.0" layoutY="251.0" onAction="#txtSearchOnAction" prefHeight="33.0" prefWidth="275.0" promptText="Search" styleClass="btnSide" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="1077.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="128.0" stylesheets="@../style/Style.css" text="Delete">
+         <styleClass>
+            <String fx:value="linear-dashpane" />
+            <String fx:value="btnSide" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton layoutX="1077.0" layoutY="166.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="128.0" stylesheets="@../style/Style.css" text="Update">
+         <styleClass>
+            <String fx:value="linear-dashpane" />
+            <String fx:value="btnSide" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton layoutX="1077.0" layoutY="127.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="128.0" stylesheets="@../style/Style.css" text="Save">
+         <styleClass>
+            <String fx:value="linear-dashpane" />
+            <String fx:value="btnSide" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>
