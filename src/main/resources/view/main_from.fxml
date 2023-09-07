@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="775.0" prefWidth="1500.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hms.controller.MainFromController">
+   <children>
+      <AnchorPane cache="true" cacheHint="ROTATE" layoutX="50.0" layoutY="112.0" opacity="0.7" prefHeight="608.0" prefWidth="192.0" scaleShape="false" styleClass="linear-grad" stylesheets="@../style/Style.css">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <JFXButton layoutX="-44.0" layoutY="88.0" onAction="#btnDashBoardOnAction" prefHeight="57.0" prefWidth="235.0" stylesheets="@../style/Style.css" text="         Dashboard" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/icons8-dashboard-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="linear-cb" />
+                  <String fx:value="linear-Colour" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="-46.0" layoutY="167.0" onAction="#btnManageStudentOnAction" prefHeight="61.0" prefWidth="235.0" stylesheets="@../style/Style.css" text="Manage Students" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/students.png" />
+                     </image></ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="linear-cb" />
+                  <String fx:value="linear-Colour" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="-44.0" layoutY="251.0" onAction="#btnManageRoomOnAction" prefHeight="57.0" prefWidth="235.0" stylesheets="@../style/Style.css" text="    Manage Rooms" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="linear-cb" />
+                  <String fx:value="linear-Colour" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/icons8-house-49.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="-44.0" layoutY="331.0" onAction="#btnManageUserOnAction" prefHeight="57.0" prefWidth="235.0" stylesheets="@../style/Style.css" text="       Manage User" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="linear-cb" />
+                  <String fx:value="linear-Colour" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="-43.0" layoutY="409.0" onAction="#btnManageReservationOnAction" prefHeight="61.0" prefWidth="235.0" stylesheets="@../style/Style.css" text="Manage Reservation" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/icons8-reserve-50.png" />
+                     </image></ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="linear-cb" />
+                  <String fx:value="linear-Colour" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="533.0" onAction="#btnLogoutOnAction" prefHeight="54.0" prefWidth="162.0" stylesheets="@../style/Style.css" text="Logout" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="linear-grad" />
+                  <String fx:value="linear-Colour" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="50.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/icons8-hotel-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="129.0" layoutY="41.0" prefHeight="53.0" prefWidth="113.0" text="Hostel">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="loadFormContext" layoutX="248.0" layoutY="112.0" prefHeight="608.0" prefWidth="1245.0" style="-fx-border-color: #ced6e0;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="1290.0" layoutY="37.0" prefHeight="45.0" prefWidth="151.0" text="   dd/mm/yyyy">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="1245.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="953.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/clock.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="1007.0" layoutY="43.0" prefHeight="33.0" prefWidth="151.0" text="     HH:mm:ss">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

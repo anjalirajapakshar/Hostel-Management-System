@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loadFormContext" prefHeight="579.0" prefWidth="885.0" styleClass="linear-barchart" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hms.controller.LoginFromController">
+   <children>
+      <AnchorPane layoutX="49.0" layoutY="50.0" prefHeight="492.0" prefWidth="793.0" style="-fx-background-color: #f5f6fa;">
+         <effect>
+            <DropShadow color="#388d9e" height="17.89" radius="10.192499999999999" width="24.88" />
+         </effect>
+         <children>
+            <ImageView fitHeight="308.0" fitWidth="509.0" layoutX="312.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/hostel-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="365.0" layoutY="29.0" prefHeight="67.0" prefWidth="383.0" stylesheets="@../style/Style.css" text="Welcome Back !" textFill="#170101">
+               <font>
+                  <Font name="Symbol" size="48.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="9.0" prefHeight="474.0" prefWidth="280.0" stylesheets="@../style/Style.css">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="21.0" layoutY="22.0" prefHeight="31.0" prefWidth="243.0" text="Hostel Management System" textFill="#fffefe">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsername" layoutX="27.0" layoutY="197.0" prefHeight="31.0" prefWidth="224.0" promptText="Username" stylesheets="@../style/Style.css" />
+                  <PasswordField fx:id="txtPassword" layoutX="28.0" layoutY="269.0" prefHeight="31.0" prefWidth="224.0" promptText="Password" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="224.0" layoutY="272.0" onMouseClicked="#imgEyeOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/icons8-eye.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnLogin" layoutX="93.0" layoutY="331.0" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="95.0" stylesheets="@../style/Style.css" text="Login">
+                     <styleClass>
+                        <String fx:value="edgez-button" />
+                        <String fx:value="linear-square1" />
+                     </styleClass>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="91.0" fitWidth="95.0" layoutX="94.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/hostel.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnSignIn" layoutX="93.0" layoutY="423.0" onAction="#btnSignInOnAction" prefHeight="31.0" prefWidth="95.0" stylesheets="@../style/Style.css" text="SignIn">
+                     <styleClass>
+                        <String fx:value="edgez-button" />
+                        <String fx:value="linear-square1" />
+                     </styleClass>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="126.0" layoutY="382.0" prefHeight="30.0" prefWidth="38.0" text="OR">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-53.0" layoutX="170.0" layoutY="397.0" startX="-114.0" />
+                  <Line endX="-53.0" layoutX="277.0" layoutY="397.0" startX="-114.0" />
+               </children>
+               <styleClass>
+                  <String fx:value="linear-barchart" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
