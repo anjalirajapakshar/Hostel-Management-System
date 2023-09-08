@@ -99,4 +99,24 @@ public class UserDAOImpl implements UserDAO{
         session.close();
         return user;
     }
+
+    @Override
+    public boolean checkPassword(String username, String password) throws IOException {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        NativeQuery<String> nativeQuery = session.createNativeQuery("SELECT password FROM user WHERE userName = :userName");
+        nativeQuery.setParameter("userName",username);
+
+        String pass = nativeQuery.uniqueResult();
+
+        transaction.commit();
+        session.close();
+
+        if (password.equalsIgnoreCase(pass)) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

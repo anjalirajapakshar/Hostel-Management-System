@@ -27,8 +27,7 @@ public class StudentBOImpl implements StudentBO {
 
     @Override
     public boolean addStudent(StudentDTO dto) throws SQLException, ClassNotFoundException, IOException {
-        return studentDAO.add(new Student(dto.getStudentID(),dto.getName(),dto.getAddress(),
-                dto.getDbo(),dto.getContact(),dto.getGender()));
+        return studentDAO.add(new Student(dto.getStudentID(),dto.getName(),dto.getAddress(),dto.getDbo(),dto.getContact(),dto.getGender()));
     }
 
     @Override
