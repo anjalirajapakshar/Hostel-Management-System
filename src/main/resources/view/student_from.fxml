@@ -18,7 +18,7 @@
 
 <AnchorPane opacity="0.86" prefHeight="608.0" prefWidth="1243.0" styleClass="linear-grad" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hms.controller.ManageStudentFromController">
    <children>
-      <Label layoutX="127.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="47.0" prefWidth="368.0" stylesheets="@../style/Style.css" text="Manage Student ." textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP">
+      <Label layoutX="132.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="47.0" prefWidth="368.0" stylesheets="@../style/Style.css" text="Manage Student ." textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP">
          <font>
             <Font name="Britannic Bold" size="46.0" />
          </font>
@@ -37,7 +37,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </ImageView>
-      <AnchorPane layoutX="28.0" layoutY="128.0" opacity="0.86" prefHeight="438.0" prefWidth="415.0" stylesheets="@../style/Style.css">
+      <AnchorPane layoutX="28.0" layoutY="180.0" opacity="0.86" prefHeight="386.0" prefWidth="415.0" stylesheets="@../style/Style.css">
          <styleClass>
             <String fx:value="linear-barchart" />
             <String fx:value="edge-button" />
@@ -56,7 +56,7 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtName" layoutX="204.0" layoutY="89.0" onKeyReleased="#txtNameOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : Niwanthi" style="-fx-border-color: blue;">
+            <JFXTextField fx:id="txtName" layoutX="204.0" layoutY="89.0" onKeyReleased="#txtNameOnKeyReleased" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: blue;">
                <font>
                   <Font name="Arial" size="15.0" />
                </font></JFXTextField>
@@ -65,13 +65,13 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtAddress" layoutX="204.0" layoutY="139.0" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : Kaluthara" style="-fx-border-color: blue;" />
+            <JFXTextField fx:id="txtAddress" layoutX="204.0" layoutY="139.0" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: blue;" />
             <Label layoutX="40.0" layoutY="249.0" prefHeight="32.0" prefWidth="128.0" text="Contact No :">
                <font>
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtContactNo" layoutX="204.0" layoutY="252.0" onKeyReleased="#txtContactOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : 0760876756" style="-fx-border-color: blue;" />
+            <JFXTextField fx:id="txtContactNo" layoutX="204.0" layoutY="252.0" onKeyReleased="#txtContactOnKeyReleased" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: blue;" />
             <Label layoutX="42.0" layoutY="192.0" prefHeight="32.0" prefWidth="128.0" text="DOB           :">
                <font>
                   <Font name="Arial Black" size="18.0" />

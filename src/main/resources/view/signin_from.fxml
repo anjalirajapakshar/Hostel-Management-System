@@ -50,12 +50,12 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtUsername" layoutX="206.0" layoutY="112.0" onKeyReleased="#txtUserNameOnKeyReleased" prefHeight="31.0" prefWidth="185.0" promptText="Ex : Niwanthi" style="-fx-border-color: blue;">
+            <JFXTextField fx:id="txtUsername" layoutX="206.0" layoutY="112.0" onKeyReleased="#txtUserNameOnKeyReleased" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: blue;">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtPassword" layoutX="206.0" layoutY="184.0" prefHeight="31.0" prefWidth="185.0" promptText="Ex : niwanthi2002" style="-fx-border-color: blue;">
+            <JFXTextField fx:id="txtPassword" layoutX="206.0" layoutY="184.0" prefHeight="31.0" prefWidth="185.0" style="-fx-border-color: blue;">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
@@ -65,7 +65,7 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtEmail" layoutX="206.0" layoutY="258.0" onKeyReleased="#txtEmailOnKeyReleased" prefHeight="33.0" prefWidth="185.0" promptText="Ex : Niwanthi@gmail.com" style="-fx-border-color: blue;">
+            <JFXTextField fx:id="txtEmail" layoutX="206.0" layoutY="258.0" onKeyReleased="#txtEmailOnKeyReleased" prefHeight="33.0" prefWidth="185.0" style="-fx-border-color: blue;">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>

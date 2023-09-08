@@ -1,12 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Label?>
-<AnchorPane prefHeight="608.0" prefWidth="1243.0" styleClass="linear-grad" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hms.controller.DashbordFromController">
+<AnchorPane prefHeight="608.0" prefWidth="1243.0" styleClass="linear-grad" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hms.controller.DashboardFromController">
    <children>
-      <Label layoutX="34.0" layoutY="27.0" prefHeight="67.0" prefWidth="169.0" text="Dashbord" />
+      <ImageView fitHeight="398.0" fitWidth="729.0" layoutX="79.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/24502004.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="48.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="91.0" prefWidth="364.0" stylesheets="@../style/Style.css" text="Dashboard " textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Britannic Bold" size="64.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <AnchorPane layoutX="869.0" layoutY="427.0" prefHeight="124.0" prefWidth="314.0" styleClass="linear-cb" stylesheets="@../style/Style.css">
+         <children>
+            <Label layoutX="28.0" layoutY="14.0" prefHeight="47.0" prefWidth="186.0" text="Total Student">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalStudent" layoutX="93.0" layoutY="65.0" prefHeight="51.0" prefWidth="89.0">
+               <font>
+                  <Font name="Arial" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="219.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/students.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="868.0" layoutY="291.0" prefHeight="124.0" prefWidth="314.0" styleClass="linear-barchart" stylesheets="@../style/Style.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="24.0" layoutY="14.0" prefHeight="47.0" prefWidth="172.0" text="Total Users">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="224.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblTotalUser" layoutX="91.0" layoutY="62.0" prefHeight="47.0" prefWidth="89.0">
+               <font>
+                  <Font name="Arial" size="44.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="866.0" layoutY="154.0" prefHeight="119.0" prefWidth="314.0" styleClass="linear-cb" stylesheets="@../style/Style.css">
+         <children>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="47.0" prefWidth="213.0" text="Total Reservation">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalReservation" layoutX="93.0" layoutY="62.0" prefHeight="47.0" prefWidth="89.0">
+               <font>
+                  <Font name="Arial" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="232.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/icons8-reserve-50.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
    </children>
 </AnchorPane>
