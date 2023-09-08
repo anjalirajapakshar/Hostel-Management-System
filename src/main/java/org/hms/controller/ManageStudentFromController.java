@@ -69,7 +69,6 @@ public class ManageStudentFromController implements Initializable {
 
     StudentBO studentBO = (StudentBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.STUDENT);
     ObservableList<Student> observableList;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ObservableList<String> list = FXCollections.observableArrayList("Male","Female");

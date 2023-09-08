@@ -18,12 +18,10 @@ public class ReservationBOImpl implements ReservationBO {
     public List<ReservationDTO> getAllReservation() throws SQLException, ClassNotFoundException, IOException {
         List<ReservationDTO> allReservations = new ArrayList<>();
         List<Reservation> all = reservationDAO.getAll();
-
         for (Reservation reservation : all){
             allReservations.add(new ReservationDTO(reservation.getReservationId(),reservation.getDate(),
                     reservation.getRoomId(),reservation.getStudentId(),reservation.getStatus()));
         }
-
         return allReservations;
     }
 
@@ -54,4 +52,5 @@ public class ReservationBOImpl implements ReservationBO {
         Reservation reservation = reservationDAO.search(id);
         return new ReservationDTO(reservation.getReservationId(),reservation.getDate(),reservation.getRoomId(),reservation.getStudentId(),reservation.getStatus());
     }
+
 }
